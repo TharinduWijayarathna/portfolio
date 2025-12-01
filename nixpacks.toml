@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["...", "nodejs-20_x", "python311Packages.supervisor", "php82Extensions.redis"]
+nixPkgs = ["...", "nodejs_20", "python311Packages.supervisor", "php82Extensions.redis"]
 
 [phases.build]
 cmds = [
