@@ -1,5 +1,5 @@
 [variables]
-NIXPACKS_NODE_VERSION = "20"
+NIXPACKS_NODE_VERSION = "22"
 
 [phases.setup]
 nixPkgs = ["...", "python311Packages.supervisor", "php82Extensions.redis"]
