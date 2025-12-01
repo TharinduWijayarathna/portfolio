@@ -20,7 +20,9 @@ cmds = [
 
 [phases.postbuild]
 cmds = [
+    "npm ci --include=dev",
     "npm run build",
+    "ls -la /app/public/build || echo 'Build directory not found!'",
     # "php /app/artisan cache:clear",
 ]
 dependsOn = ["build"]
